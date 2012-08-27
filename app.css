@@ -1,0 +1,107 @@
+/* Circles
+// Copyright (c) Alan Hardman 2012
+*/
+
+html{-webkit-text-size-adjust:none}
+*{
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-user-select: none;
+	-webkit-touch-callout: none;
+}
+html,body {
+	margin: 0;
+	padding: 0;
+}
+div {
+	-webkit-transition: opacity .5s ease;
+}
+.hidden {
+	opacity: 0;
+}
+body {
+	background: #222;
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+}
+h1 {
+	font-size: 50px;
+}
+p {
+	font-size: 16px;
+	margin: 0;
+	padding: 6px 12px;
+}
+p.b {
+	font-size: 20px;
+}
+p.p {
+	padding-top: 60px;
+}
+#menu {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 320px;
+	height: 460px;
+	z-index: 100;
+	background: black;
+}
+#score {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 320px;
+	height: 460px;
+	z-index: 90;
+	background: white;
+}
+#score h1,#score p {
+	color: #444;
+}
+#help {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 320px;
+	height: 460px;
+	z-index: 120;
+	background: white;
+}
+#help h1,#help p {
+	color: #222;
+}
+#game {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 320px;
+	height: 460px;
+	z-index: 10;
+	background: black;
+}
+#game {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 320px;
+	height: 460px;
+	z-index: 20;
+	background: black;
+}
+#lose {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 320px;
+	height: 460px;
+	z-index: 30;
+	background: red;
+}
+.c {
+	position: absolute;
+	display: block;
+	background: white;
+	border-radius: 40px;
+	border: 2px solid #000;
+	z-index: 16;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html manifest="circles.appcache">
+<html>
+<head>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+	<title>Circles</title>
+	<link rel="stylesheet" href="app.css">
+	<link rel="apple-touch-icon" type="image/png" href="Icon.png">
+	<link rel="apple-touch-startup-image" type="image/png" href="startup.png">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="game.js"></script>
+</head>
+<body>
+	<div id="menu" class="hidden">
+		<h1 align="center">Circles</h1>
+		<p align="center" class="b" onclick="newGame()">New Game</p>
+		<p align="center" class="b" onclick="showHelp()">How To Play</p>
+		<p align="center" class="p" id="m_hs"></p>
+	</div>
+	<div id="help" class="hidden" onclick="hideHelp()">
+		<h1 align="center">Circles</h1>
+		<p align="center">With each level, a new circle is added to the screen. You must tap the correct circle to continue.  If you tap the wrong circle, the game is over.</p>
+		<p align="center" class="p">tap to continue</p>
+	</div>
+	<div id="score" class="hidden" onclick="nextLevel()">
+		<h1 align="center" id="curscore"></h1>
+		<p align="center" id="s_hs"></p>
+		<p align="center" class="p">tap to continue</p>
+	</div>
+	<div id="lose" class="hidden" onclick="newGame()">
+		<h1 align="center">Game Over</h1>
+		<p align="center">Score:</p>
+		<h1 align="center" id="lose_score"></h1>
+		<p align="center" class="p">tap for new game</p>
+	</div>
+	<div id="game">
+		
+	</div>
+</body>
+</html>
