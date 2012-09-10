@@ -1,6 +1,12 @@
 CACHE MANIFEST
+
+# Version:
+# 0.3
+
+CACHE:
 app.html
 app.css
-jquery.js
-game.js
-#startup.png
+jq.js
+g.js
+
+SERVER:

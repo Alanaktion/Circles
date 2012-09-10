@@ -1,2 +1,1 @@
-# Tell server to send the correct header for the application manifest
 AddType text/cache-manifest .appcache .manifest
